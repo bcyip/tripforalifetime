@@ -4,6 +4,7 @@
 /***********************************************************/
 
 $slider_status = esc_attr(get_theme_mod('wrt_slider_enable', 'enable'));
+$date_format = 'l, F j, Y';
 
 if( $slider_status == 'enable'):
 
@@ -78,13 +79,11 @@ if( $slider_status == 'enable'):
 							
 							<div class="banner-text">
 								<div class="site-container">
-									<?php if($slider_meta_status == 'enable'): ?>
-										<span class="banner-text-cat"><?php the_category(',') ?></span>
-									<?php endif; ?>
 									
 									<?php the_title( '<h2 class="banner-text-title"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' ) ?>
 									<?php if($slider_meta_status == 'enable'): ?>
 										<span class="banner-text-author"><?php echo __('By', 'writee') ?> <?php the_author_posts_link() ?></span>
+										<span class="entry-date"><?php echo __('on', 'writee'); ?> <a href="<?php echo get_month_link(get_the_time('Y'), get_the_time('m')); ?>"><?php the_time($date_format); ?></a></span>
 									<?php endif; ?>
 									
 								</div>

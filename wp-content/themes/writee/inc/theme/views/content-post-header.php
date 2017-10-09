@@ -10,7 +10,7 @@ $date_format = 'l, F j, Y';
 ?>
 	<div class="entry-header">
 		<div class="entry-meta">
-			<span class="entry-cat"><?php the_category(' ')?></span>
+
 		</div>
 		<?php 
 		if (! is_single()) :

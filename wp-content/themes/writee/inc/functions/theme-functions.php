@@ -240,8 +240,6 @@ function writee_social_sharing_buttons() {
 	
 	$content .= '<li><a href="#" onclick="window.open(\''.$pinterestURL.'\', \'pinterest-share\', \'width=490,height=530\');return false;"><span class="fa fa-pinterest-p"></span></a></li>';
 	
-	$content .= '<li><a href="'.$googleURL.'" onclick="window.open(this.href, \'google-plus-share\', \'width=490,height=530\');return false;"><span class="fa fa-google-plus"></span></a></li>';
-		
 	$content .= '</ul>';
 	
 	return $content;
