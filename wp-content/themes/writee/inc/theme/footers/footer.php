@@ -32,12 +32,7 @@
 			<?php 
 				echo esc_html(get_theme_mod('wrt_copyright')); 
 			?>
-			
-			<?php echo __('Theme by', 'writee') ?>
-			<a href="<?php echo esc_url( __( 'http://www.scissorthemes.com/', 'writee' ) ); ?>" traget="_blank"><?php printf( __( ' %s', 'writee' ), 'Scissor Themes' ); ?></a>
-			<?php echo __('Proudly powered by', 'writee') ?>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'writee' ) ); ?>" traget="_blank"><?php printf( __( ' %s', 'writee' ), 'WordPress' ); ?></a>
-			
+
 		</div>
 	</div>
 	
