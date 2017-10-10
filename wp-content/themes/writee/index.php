@@ -23,7 +23,7 @@ get_template_part('inc/theme/sliders/slider');
 				<div class="site-content <?php echo $layout_css_class; if($sidebar_layout == '2cl'  || $sidebar_layout == '2cr') echo ' with-sidebar '; else echo ' with-no-sidebar '; ?>" id="site-content" role="main">
 				<?php 
 					get_template_part('inc/theme/layouts/'.$layout);
-					if ($wp_query->max_num_pages > 1) writee_pagenavi(); 
+					writee_pagenavi();
 				?>
 				</div>
 				<?php if($sidebar_layout == '2cl' || $sidebar_layout == '2cr'): ?>
