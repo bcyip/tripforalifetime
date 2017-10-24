@@ -3827,9 +3827,9 @@ Primary. Secondary, Social and Mobile Navigation
   vertical-align: middle;
   width: 1.875rem;
   height: 30px;
-  background-color: transparent;
-  border-top: 6px solid #000000;
-  border-bottom: 18px double #000000; }
+  background-color: black;
+  border-top: 6px solid #ffffff;
+  border-bottom: 18px double #ffffff; }
   @media screen and (max-width: 767px) {
     .mobile-navigation-toggle {
       display: inline-block;
@@ -3839,7 +3839,7 @@ Primary. Secondary, Social and Mobile Navigation
 .site-mobile-navigation {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   bottom: 0;
   z-index: 9999;
   display: block;
@@ -3848,11 +3848,11 @@ Primary. Secondary, Social and Mobile Navigation
   max-width: 18.75em;
   background-color: #000000;
   color: #ffffff;
-  -webkit-transform: translateX(100%);
-  -moz-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  -o-transform: translateX(100%);
-  transform: translateX(100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
@@ -4581,8 +4581,8 @@ Headers
       text-align: right; }
   .site-header .site-header-bottom {
     position: relative;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000000;
+    color: #ffffff;
     text-align: center;
     transition: background 0.3s ease;
     -webkit-transition: background 0.3s ease; }
@@ -4590,9 +4590,9 @@ Headers
     position: relative; }
   @media screen and (max-width: 767px) {
     .site-header {
-      padding-top: 0.625em;
+      padding-top: 0;
       padding-bottom: 0.625em;
-      border-bottom: 1px solid #000000; }
+      #border-bottom: 1px solid #000000; }
       .site-header .site-header-top {
         display: none; } }
 

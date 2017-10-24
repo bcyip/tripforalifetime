@@ -195,7 +195,7 @@ function writee_get_social($echo = true){
 	
 	if($link_enabled > 0):
 		$social_link_output .='
-		<div class="site-header-top-right site-column-3">
+		<div class="site-header-top-right site-column-3" style="float:right">
 			<nav id="social-navigation" class="social-navigation '.$writee_button_style.'"><ul>'.$social_link.'</ul></nav>
 		</div>';
 	endif;
