@@ -4573,8 +4573,8 @@ Headers
       text-align: left; }
   .site-header .site-header-bottom {
     position: relative;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000000;
+    color: #ffffff;
     text-align: center;
     transition: background 0.3s ease;
     -webkit-transition: background 0.3s ease; }
