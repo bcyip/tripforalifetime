@@ -459,8 +459,13 @@ function natural_lite_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'natural_lite_excerpt_length', 999 );
 
+
+
 function natural_lite_excerpt_more( $more ) {
-	return '...';
+	return sprintf( '<a href="%1$s">%2$s</a>',
+		get_permalink( get_the_ID() ),
+		__( '  Read More', 'natural-lite' )
+	);
 }
 add_filter( 'excerpt_more', 'natural_lite_excerpt_more' );
 

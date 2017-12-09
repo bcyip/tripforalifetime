@@ -1,4 +1,10 @@
 <?php
+
+function wpdocs_excerpt_more( $more ) {
+    return '[.....]';
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
 function columnist_widgets_init() {
 	// Sidebar Widget Area
 	register_sidebar(array('name'=>'Sidebar',
