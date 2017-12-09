@@ -48,7 +48,7 @@
                                 if ( !is_single()):
                                     if ( has_post_thumbnail() ) { ?>
                                         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                                            <?php the_post_thumbnail(); ?>
+                                            <?php the_post_thumbnail('medium_large'); ?>
                                         </a> <?php
                                     }; endif;
 
