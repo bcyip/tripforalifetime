@@ -45,7 +45,7 @@
 				<div class="align-left">
 
 					<p><?php esc_html_e( 'Copyright', 'natural-lite' ); ?> &copy; <?php echo date( esc_html__( 'Y', 'natural-lite' ) ); ?> &middot; <?php esc_html_e( 'All Rights Reserved', 'natural-lite' ); ?> &middot; <?php bloginfo( 'name' ); ?></p>
-					
+
 				</div>
 
 				<?php if ( has_nav_menu( 'social-menu' ) ) { ?>

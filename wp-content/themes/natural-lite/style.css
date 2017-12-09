@@ -1031,7 +1031,7 @@ html[xmlns] .slides {
 .blog-holder, .archive-holder {
 	margin-bottom: 24px;
 	padding-bottom: 24px;
-	border-bottom: 1px solid rgba(0, 0, 0, .08);
+	border-bottom: 3px solid rgba(0, 0, 0, .08);
 }
 .postarea {
 	background: #ffffff;
