@@ -3771,10 +3771,23 @@ function dead_db() {
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title><?php _e( 'Database Error' ); ?></title>
-
+	<style>
+		body{
+			background-image: url("/wp-includes/images/error_bg.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100%;
+			background-position: center;
+		}
+		h1{
+			margin-top: 25%;
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
-	<h1><?php _e( 'Error establishing a database connection' ); ?></h1>
+	<h1><?php _e( 'Looks like our site is getting more traffic than expected!');?></br>
+		<?php _e('Please check back in an hour' ); ?></h1>
 </body>
 </html>
 <?php
