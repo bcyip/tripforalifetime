@@ -9,7 +9,6 @@ Template Name: Activities
  */
 
 get_header(); ?>
-asdfadsfasfa
 <!-- BEGIN .post class -->
 <div <?php post_class(); ?> id="page-<?php the_ID(); ?>">
 

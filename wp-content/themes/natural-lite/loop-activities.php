@@ -7,8 +7,8 @@
  */
 
 ?>
-<?php $args =  array( 'category_name'=>'activities', 'posts_per_page' => 10) ?>
-<?php $activities_query = new WP_Query($args); ?>
+<?php $args =  array( ) ?>
+<?php $activities_query = new WP_Query( array('category_name'=>'activities', 'posts_per_page' => 10, 'paged'=>$paged) ); ?>
 <?php if ( $activities_query->have_posts() ) : while ( $activities_query->have_posts() ) : $activities_query->the_post(); ?>
 
     <!-- BEGIN .blog-holder -->
@@ -45,7 +45,17 @@
     <?php if ( $activities_query->max_num_pages > 1 ) { ?>
         <!-- BEGIN .pagination -->
         <div class="pagination">
-            <?php echo natural_lite_get_pagination_links(); ?>
+            <?php
+                $big = 999999999;
+                echo paginate_links( array(
+                    'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+                    'format' => '?paged=%#%',
+                    'current' => max( 1, get_query_var( 'paged' ) ),
+                    'prev_text' => esc_html__( '&laquo;', 'natural-lite' ),
+                    'next_text' => esc_html__( '&raquo;', 'natural-lite' ),
+                    'total' => $activities_query->max_num_pages,
+                ) );
+            ?>
             <!-- END .pagination -->
         </div>
     <?php } ?>
