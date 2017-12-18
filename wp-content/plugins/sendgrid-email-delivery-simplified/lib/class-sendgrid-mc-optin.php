@@ -150,7 +150,11 @@ class Sendgrid_OptIn_API_Endpoint{
 
     add_filter( 'sendgrid_mail_text', function() use ( &$content_text ) { return $content_text; } );
 
+    add_filter('wp_mail_content_type', 'set_html_content_type');
+
     $result = wp_mail( $to, $subject, $content, $headers );
+
+    remove_filter('wp_mail_content_type', 'set_html_content_type');
 
     return $result;
   }
